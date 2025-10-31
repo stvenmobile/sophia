@@ -138,6 +138,21 @@ python tools/assistant/wakeword_assistant.py
 
 say: "computer" → ask a question → get a spoken answer
 
+### 🎛️ Voice tuning (TTS/ASR parameters)
+
+Calibrate speech output and transcription without the full assistant loop by using the dedicated tuning helper. It reuses Piper + faster-whisper and prints copy/paste snippets you can drop into `assistant.py` once you like the results.
+
+```bash
+# Speak a prompt with custom Piper settings
+python tools/assistant/voice_tuning.py speak --text "Testing one two" --length-scale 0.95 --noise-scale 0.5
+
+# Record 7 seconds of audio and transcribe it
+python tools/assistant/voice_tuning.py listen --seconds 7 --model medium.en --device cuda
+
+# Dump the current tuning defaults for reuse
+python tools/assistant/voice_tuning.py snapshot
+```
+
 ⚡ Enable GPU for faster-whisper (CTranslate2 with CUDA)
 
 If assistant_fw.py complains about CPU-only CTranslate2, build it with CUDA:
