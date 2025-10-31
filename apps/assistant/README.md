@@ -101,8 +101,6 @@ source .venv/bin/activate
 pip install --upgrade pip
 # baseline requirements (Whisper path)
 pip install -r requirements.txt
-# faster-whisper path (optional)
-pip install faster-whisper
 ```
 
 ## 🚀 Run it
