@@ -1,0 +1,54 @@
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editors/IDEs
+.vscode/
+.idea/
+*.code-workspace
+
+# Python (tools/scripts)
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+env/
+venv/
+dist/
+build/
+*.log
+
+# Node/web (if any dashboard later)
+node_modules/
+npm-debug.log*
+yarn-error.log
+
+# Arduino / PlatformIO / ESP-IDF
+.pio/
+.pioenvs/
+.piolibdeps/
+.ccls-cache/
+.clangd/
+cmake-build-*/
+build-*/
+*.elf
+*.bin
+*.map
+*.hex
+*.uf2
+
+# Assets/exports
+*.zip
+*.tar
+*.tar.gz
+
+# Local env/config
+.env
+.env.*
+secrets.*
+credentials.*
+
+# OS metadata in asset dirs
+assets/**/.DS_Store
+hardware/**/.DS_Store
+docs/**/.DS_Store
