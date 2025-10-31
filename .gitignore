@@ -1,0 +1,11 @@
+# venvs & pycache
+**/.venv/
+**/__pycache__/
+*.pyc
+
+# audio scratch
+*.wav
+
+# editor junk
+.vscode/
+.idea/
