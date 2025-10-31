@@ -44,9 +44,13 @@ cd sophia
 
 # Python assistant setup
 cd apps/assistant
+python -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
 pytest -q
 ```
+
+> Re-activate the environment for later sessions with `source apps/assistant/.venv/bin/activate`.
 
 ### 2. Firmware Build (CYD Display)
 ```bash
