@@ -1,4 +1,4 @@
-# Sophia Monorepo
+# Sophia (myFriend)
 
 **Sophia** is a modular open‑source robotics and AI assistant framework that brings together hardware expression, voice interaction, and language intelligence.  
 This repository unifies multiple subsystems into one coherent project.
